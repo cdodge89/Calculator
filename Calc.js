@@ -147,6 +147,7 @@ $(document).ready(function(){
 		if(!operatorFlag){
 			if(!negFlag){
 				var lastNumber = IOstring.slice(lastOperator, IOstring.length);
+				if(lastNumber === " 0" || lastNumber === "0"){return;}
 				console.log("LN length " + lastNumber.length);
 				var restOf = IOstring.slice(0, lastOperator);
 				// console.log("rest " + restOf);
